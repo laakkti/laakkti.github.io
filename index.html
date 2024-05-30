@@ -76,6 +76,8 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <div class="wm-page-top-frame" id="main-content">
 <nav class="wm-toc-pane">
 <ul class="wm-toctree">
+<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="xxxx.md">tsekkaa jamk_fullstac readme</a>
+</li>
 <li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="">Introducion</a>
 </li>
 <li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="intro/overview/">Overview</a>
@@ -84,13 +86,41 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </li>
 <li class="wm-toc-li-nested collapse">
 <ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="routes.md">Routes</a>
+<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="routes/overview.md">Overview</a>
 </li>
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="user-controller.md">User-cortroller</a>
+<li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">user-routes</span>
 </li>
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="login.md">Login</a>
+<li class="wm-toc-li-nested collapse">
+<ul class="wm-toctree">
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/register.md">register</a>
 </li>
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="register.md">Register</a>
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/login.md">login</a>
+</li>
+</ul>
+</li>
+<li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">ndvi-routes</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+<ul class="wm-toctree">
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/iist.md">list</a>
+</li>
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/image.md">image</a>
+</li>
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/weather.md">weather</a>
+</li>
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/activate.md">activate</a>
+</li>
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/aios.md">aios</a>
+</li>
+</ul>
+</li>
+<li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">dev-routes</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+<ul class="wm-toctree">
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="routes/aiostomongo.md">aiostomongo</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -98,17 +128,37 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </li>
 <li class="wm-toc-li-nested collapse">
 <ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="mongodb.md">MongoDb Atlas</a>
+<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="database/overview/">Overview</a>
 </li>
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="models.md">Models</a>
+<li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">MongoDB</span>
 </li>
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="mongodb_js.md">mongodb.js</a>
+<li class="wm-toc-li-nested collapse">
+<ul class="wm-toctree">
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="mongodb.md">MongoDb Atlas</a>
+</li>
+<li class="wm-toc-li wm-toc-lev3 wm-toc-opener"><span class="wm-toc-text">Models</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+<ul class="wm-toctree">
+<li class="wm-toc-li wm-toc-lev4"><a class="wm-article-link wm-toc-text" href="database/models/dateschema/">datesSchema</a>
+</li>
+<li class="wm-toc-li wm-toc-lev4"><a class="wm-article-link wm-toc-text" href="database/models/imageschema/">imageSchema</a>
+</li>
+<li class="wm-toc-li wm-toc-lev4"><a class="wm-article-link wm-toc-text" href="database/models/userschema/">userSchema</a>
+</li>
+<li class="wm-toc-li wm-toc-lev4"><a class="wm-article-link wm-toc-text" href="database/models/workareaschema/">workareaSchema</a>
+</li>
+</ul>
+</li>
+<li class="wm-toc-li wm-toc-lev3"><a class="wm-article-link wm-toc-text" href="database/mongodb_js/">API(mongodb.js)</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="utils.md">Components/utilities</a>
 </li>
-<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="libraries.md">Librarie ja missä käytetään (routes)</a>
+<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="libraries/libraries/">Libraries</a>
 </li>
 <li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="deployment/deployment/">Deployment</a>
 </li>
@@ -190,5 +240,5 @@ docs/
 </html>
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-05-27 11:43:20.674417+00:00
+Build Date UTC : 2024-05-30 08:08:16.277608+00:00
 -->

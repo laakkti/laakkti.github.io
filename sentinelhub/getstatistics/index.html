@@ -7,7 +7,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<title>Models - ytsp0200-3004 Backend for NDVI demo for agriculture</title>
+<title>Statistics Fetching Module - ytsp0200-3004 Backend for NDVI demo for agriculture</title>
 <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet"/>
 <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet"/>
 <link href="../../css/base.css" rel="stylesheet"/>
@@ -27,6 +27,10 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Statistics Fetching Module", url: "#_top", children: [
+              {title: "Imports", url: "#imports" },
+              {title: "Main Function", url: "#main-function" },
+          ]},
         ];
 
     </script>
@@ -38,7 +42,53 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </script>
 <div class="container-fluid wm-page-content">
 <a name="_top"></a>
-<p>onko tämä tarpeen</p>
+<h1 id="statistics-fetching-module">Statistics Fetching Module</h1>
+<p>This JavaScript module fetches statistical data for a given geometry and time range from Sentinel Hub. Below is a summary of the key components and functionality.</p>
+<h2 id="imports">Imports</h2>
+<ul>
+<li><strong>axios</strong>: A library for making HTTP requests.</li>
+<li><strong>calculateDim</strong>: A custom utility module for calculating image dimensions.</li>
+</ul>
+<h2 id="main-function">Main Function</h2>
+<h3 id="getstatisticsgeometry-datefrom-dateto"><code>getStatistics(geometry, dateFrom, dateTo)</code></h3>
+<ul>
+<li><strong>Description</strong>: Fetches statistical data for a specific geometry and time range.</li>
+<li><strong>Parameters</strong>:</li>
+<li><code>geometry</code> - The geometry object.</li>
+<li><code>dateFrom</code> - The start date in ISO format.</li>
+<li><code>dateTo</code> - The end date in ISO format.</li>
+<li><strong>Returns</strong>: An array of statistics data.</li>
+</ul>
+<h3 id="details">Details</h3>
+<ul>
+<li><strong>Evalscript</strong>: Defines how to calculate an index (e.g., NDVI) and the bands to be used.</li>
+<li><strong>Setup Function</strong>: Specifies the input bands and the output structure.</li>
+<li>
+<p><strong>evaluatePixel Function</strong>: Calculates the index and returns it along with the data mask.</p>
+</li>
+<li>
+<p><strong>Helper Function</strong></p>
+</li>
+<li>
+<p><code>getWidthAndHeight(geometry)</code>: Calculates the width and height for an image based on a provided geometry.</p>
+<ul>
+<li><strong>Parameters</strong>: <code>geometry</code> - The geometry object.</li>
+<li><strong>Returns</strong>: An object containing the width and height for the image.</li>
+</ul>
+</li>
+<li>
+<p><strong>Request Parameters</strong>:</p>
+</li>
+<li><strong>Width and Height</strong>: Uses <code>getWidthAndHeight</code> to determine the image's width and height.</li>
+<li><strong>Authorization</strong>: Sets up the bearer token for authentication.</li>
+<li><strong>Data Object</strong>: Contains the input geometry, data filters, and aggregation settings.</li>
+<li>
+<p><strong>Aggregation Settings</strong>: Specifies the time range, aggregation interval, and resolution.</p>
+</li>
+<li>
+<p><strong>Error Handling</strong>: Returns an empty array if the request fails.</p>
+</li>
+</ul>
 <br/>
 </div>
 <footer class="container-fluid wm-page-content">

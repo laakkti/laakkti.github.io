@@ -67,8 +67,8 @@ build folder</p>
   }</p>
 <p>There is a Azure pipeline ON DevOps but for this demo app this was not an option.</p>
 <p>(Azure web app container /-register)</p>
-<p><img alt="image 1" src="./img/docker.jpg" width="300"/>
-<img alt="image 1" src="./img/docker2.jpg" width="300"/></p>
+<p><img alt="image 1" src="../../img/docker.jpg" width="300"/></p>
+<p><img alt="image 1" src="../../img/docker2.jpg" width="300"/></p>
 <p>https://portal.azure.com/</p>
 <p>laakkti@outlook.com
 https://portal.azure.com/#@laakktioutlook.onmicrosoft.com/resource/subscriptions/08680159-3a33-4f02-a0f1-1b648e13f8a5/resources</p>
@@ -82,9 +82,9 @@ CMD ["npm", "start"]
 <h4 id="dockerignore">.dockerignore</h4>
 <p>.node_modules</p>
 <h3 id="container-registry">Container Registry</h3>
-<p><img alt="image 1" src="./img/registry_1.png" width="300"/>
-<img alt="image 1" src="./img/registry_2.png" width="300"/>
-<img alt="image 1" src="./img/registry_3.png" width="300"/></p>
+<p><img alt="image 1" src="../../img/registry_1.png" width="300"/>
+<img alt="image 1" src="../../img/registry_2.png" width="300"/>
+<img alt="image 1" src="../../img/registry_3.png" width="300"/></p>
 <p>Registry name (Username): ndvireg 
 Login server: ndvireg.azurecr.io
 password:  Tm9qFwxVD4/DSPi3LmEomsuvW9NDOUlb8f1/Rtp7t3+ACRApVSqe
@@ -93,7 +93,7 @@ password2: 7+aJFEG6LSKQYgic1rueERF7FKEtCHsfgHUy1FqfUM+ACRCBU4qY</p>
 Username: ndvireg
 Password: Tm9qFwxVD4/DSPi3LmEomsuvW9NDOUlb8f1/Rtp7t3+ACRApVSqe
 </code></pre>
-<p><img alt="image 1" src="./img/registry_4.png" width="300"/></p>
+<p><img alt="image 1" src="../../img/registry_4.png" width="300"/></p>
 <h3 id="building-the-docker-image">Building the Docker Image</h3>
 <pre><code>docker build -t ndvireg.azurecr.io/ndvidemo:latest .
 </code></pre>
@@ -105,13 +105,13 @@ Password: Tm9qFwxVD4/DSPi3LmEomsuvW9NDOUlb8f1/Rtp7t3+ACRApVSqe
 <p>To push the image from your local to the Azure Container Registry</p>
 <pre><code>docker push ndvireg.azurecr.io/ndvidemo:latest
 </code></pre>
-<p><img alt="image 1" src="./img/registry_5.png" width="300"/></p>
-<p><img alt="image 1" src="./img/registry_6.png" width="300"/></p>
+<p><img alt="image 1" src="../../img/registry_5.png" width="300"/></p>
+<p><img alt="image 1" src="../../img/registry_6.png" width="300"/></p>
 <h3 id="azure-web-app">Azure Web App</h3>
 <p>Hosting the container from register</p>
-<p><img alt="image 1" src="./img/webapp_1.png" width="300"/></p>
+<p><img alt="image 1" src="../../img/webapp_1.png" width="300"/></p>
 <h3 id="continuous-deployment">Continuous Deployment</h3>
-<p><img alt="image 1" src="./img/webapp_2.png" width="300"/></p>
+<p><img alt="image 1" src="../../img/webapp_2.png" width="300"/></p>
 <h4 id="url-for-the-server">Url for the server</h4>
 <pre><code>https://ndvidemo.azurewebsites.net
 </code></pre>
@@ -123,7 +123,7 @@ Password: Tm9qFwxVD4/DSPi3LmEomsuvW9NDOUlb8f1/Rtp7t3+ACRApVSqe
 <h5 id="remarks-tee-tyyli-punaisella">REMARKS (tee tyyli punaisella!!!)</h5>
 <p>!!!!!!!!!
 ei aina päivity!!!! joten container registryn repository deletetoitava sekä jos kus serveri päivityksen jälkeen käynnistettävä!!!</p>
-<p><img alt="image 1" src="./img/ndvireg_repository.png" width="600"/></p>
+<p><img alt="image 1" src="../../img/ndvireg_repository.png" width="600"/></p>
 <p>Container registry
 ndvireg | Repositories  DELETE </p>
 <h3 id="testing-docker-image-in-local-on-docker-desktop">Testing Docker image in local on Docker Desktop</h3>
